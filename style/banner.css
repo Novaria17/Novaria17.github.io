@@ -9,10 +9,3 @@
   height: 600px;
   justify-content: center;
 }
-
-@media only screen and (max-width: 768px) {
-  .banner .container {
-    border-radius: unset;
-    margin-top: 88px;
-  }
-}

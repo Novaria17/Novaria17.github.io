@@ -33,29 +33,3 @@
   height: 320px;
   width: 280px;
 }
-
-@media only screen and (max-width: 1024px) {
-  .topics-card-wrapper {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-    width: 410px;
-  }
-}
-
-@media only screen and (max-width: 758px) {
-  .topics-desc {
-    font-size: 18px;
-  }
-
-  .topics-wrapper {
-    flex-direction: column-reverse;
-    gap: 30px;
-  }
-  .topics-card-wrapper {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-    width: 100%;
-  }
-
-  .topics-sidebar {
-    width: 100%;
-  }
-}
