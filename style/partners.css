@@ -22,3 +22,17 @@
 .partner-logo:hover {
   filter: grayscale(0);
 }
+
+@media only screen and (max-width: 768px) {
+  .partner-wrapper {
+    grid-template-columns: repeat(5, minmax(100px, 100px));
+    justify-content: center;
+    overflow-x: auto;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .partner-wrapper {
+    justify-content: start;
+  }
+}

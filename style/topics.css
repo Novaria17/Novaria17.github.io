@@ -33,3 +33,22 @@
   height: 320px;
   width: 280px;
 }
+
+@media only screen and (max-width: 1024px) {
+  .topics-card-wrapper {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    width: 360px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .topics-wrapper {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  .topics-sidebar,
+  .topics-card-wrapper {
+    width: 100%;
+  }
+}
