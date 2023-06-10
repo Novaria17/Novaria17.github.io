@@ -29,7 +29,7 @@
           <a href="#" class="navigation-item">Tentang Kami</a>
           <a href="#" class="navigation-item btn-register">Daftar</a>
         </nav>
-        <button class="menu-button">
+        <button class="menu-button" onclick="menuButtonFunction()">
           <img src="/images/menu.svg" alt="" />
         </button>
       </div>
@@ -120,7 +120,7 @@
               <li>Consectetur Adipisicing</li>
             </ul>
           </div>
-          <div class="program-image"></div>
+          <div id="program-image"></div>
         </div>
       </section>
     </main>
@@ -128,5 +128,14 @@
     <footer class="footer">
       <div class="container"></div>
     </footer>
+
+    <script>
+      const navigationMenu =
+        document.getElementsByClassName("navigation-wrapper")[0];
+
+      function menuButtonFunction() {
+        navigationMenu.classList.toggle("show-navigation");
+      }
+    </script>
   </body>
 </html>
